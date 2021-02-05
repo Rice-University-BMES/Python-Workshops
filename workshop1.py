@@ -1,5 +1,7 @@
 # Comments! Use comments to explain your code.
 
+# hello carrigan
+
 # Variables
 # Can contain letters, numbers, underscores
 # Best practice: separate words with underscores, use meaningful names
