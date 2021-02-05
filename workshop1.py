@@ -1,6 +1,7 @@
 # Comments! Use comments to explain your code.
 
 # hello carrigan
+# oh hey eric
 
 # Variables
 # Can contain letters, numbers, underscores
