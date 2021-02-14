@@ -4,8 +4,10 @@
 #email edt3@rice.edu
 #date 03 Feb 2021 
 
-# dicationary is a mapping,
+# dictionary is a mapping,
 # keys -> values. one directional
+
+# adding a comment to make sure i'm doing this right
 
 import random
 
