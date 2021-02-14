@@ -7,8 +7,6 @@
 # dictionary is a mapping,
 # keys -> values. one directional
 
-# adding a comment to make sure i'm doing this right
-
 import random
 
 my_dict = {1:2, 3:4, 6:727, 83:421}
