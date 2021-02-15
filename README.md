@@ -4,6 +4,6 @@ Welcome to Rice University BMES's introdctory Python workshops! No former coding
 Workshops cover various Python basics. They are currently structured as follows:
 
 <ol>
-<li><a href="https://github.com/carriganh/crashcourse/blob/dev/workshop1.py">Variables, Data Types, Arithmetic</a></li>
+<li><a href="https://github.com/Rice-University-BMES/Python-Workshops/blob/master/Workshop1.py">Variables, Data Types, Arithmetic</a></li>
 <li>Lists, Dictionaries, Sets, and Tuples (link coming soon)</li>
 </ol>
