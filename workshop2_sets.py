@@ -14,7 +14,7 @@
 
 ### Sets
 
-courses = set([252, 332, 370, 391])
+courses = set([252, 332, 370, 391]) # can also be written as {}
 print(courses)
 
 courses2 = set([252, 332, 252, 370, 391, 332])
