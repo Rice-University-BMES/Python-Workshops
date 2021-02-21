@@ -51,7 +51,7 @@ for ch in new_cypher:
 def new_encode():
     emsg = ""
     for ch in message:
-        emsg +=  new_dict[ch]
+        emsg += new_dict[ch]
     print(message, "encodes to", emsg)
     return (emsg)
 
