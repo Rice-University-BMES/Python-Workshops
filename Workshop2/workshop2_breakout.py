@@ -7,9 +7,6 @@
 # Breakout room activities for workshop 2!
 # For/while loops, if statements, lists, sets, tuples, dictionaries
 
-# TODO: add one more example with dictionaries!
-# idea: use zip/enumerate on a list and convert it to a dictionary!
-
 # Lists
 
 # It's time to make your schedule on python! make a list with all the classes you are currently taking
@@ -59,6 +56,17 @@ for fruits, colors in fruit_colors.items():
 
 
 # Turns out the apple was supposed to be a Granny Smith. Can you change the 'apple' entry appropriately?
+
+
+# zip/enumerate -> dictionary
+# We went through the BIOE core course requirements and were able to get this data off of the website
+# However, we were only able to compile all the department names and course numbers, in order. Can you
+# convert this to a dictionary that links the course number (key) to the department (value)?
+
+# Use the zip command, then iterate through the resulting list to form your dictionary!
+course_nums = [252, 140, 202, 243, 211, 451]
+depts = ['BIOE', 'COMP', 'MECH', 'ELEC', 'CHEM', 'BIOE']
+
 
 # ideas: swap keys and values
 # nested dictionaries or lists
