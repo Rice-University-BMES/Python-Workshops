@@ -1,8 +1,8 @@
-# module 2 - Lists
+# Python Workshop 2 - lists
 
-#author Eric Torres
-#email edt3@rice.edu
-#date 14 Feb 2021
+# author Eric Torres
+# email edt3@rice.edu
+# date 14 Feb 2021
 
 # list - ordered sequence
 # dictionary - key -> value mapping
