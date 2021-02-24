@@ -1,8 +1,8 @@
-# Python Workshop 2 - Dictionaries
+# Python Workshop 2 - dictionaries
 
-#author Eric Torres
-#email edt3@rice.edu
-#date 03 Feb 2021 
+# author Eric Torres
+# email edt3@rice.edu
+# date 03 Feb 2021
 
 # dictionary is a mapping,
 # keys -> values. one directional
