@@ -1,3 +1,9 @@
+# Python Workshop 2 - tuples
+
+# author Eric Torres
+# email edt3@rice.edu
+# date 03 Feb 2021
+
 # tuples are like lists but they are not mutable!
 
 lst = [1, 2, 3]
