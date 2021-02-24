@@ -1,4 +1,4 @@
-# module 2 - Dictionaries
+# Python Workshop 2 - Dictionaries
 
 #author Eric Torres
 #email edt3@rice.edu
