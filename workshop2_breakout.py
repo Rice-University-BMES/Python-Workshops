@@ -1,7 +1,14 @@
+# Python Workshop 2 - breakout rooms: lists, dictionaries, sets, tuples, iteration, indexing
+
+# author Eric Torres, Carrigan Hudgins, Saideep Narendula
+# email edt3@rice.edu, cdh5@rice.edu, sn42@rice.edu
+# date 24 Feb 2021
+
 # Breakout room activities for workshop 2!
 # For/while loops, if statements, lists, sets, tuples, dictionaries
 
 # TODO: add one more example with dictionaries!
+# idea: use zip/enumerate on a list and convert it to a dictionary!
 
 # Lists
 
