@@ -81,10 +81,10 @@ lst2[2] = 4
 print(lst)
 print(lst2)
 
-# now try with strings!
-msg = "hello"
-msg2 = msg
-msg2[4] = "z"
-print(msg)
+# now try with strings! (it won't let you)
+# msg = "hello"
+# msg2 = msg
+# msg2[4] = "z"
+# print(msg)
 
 # what would happen if this was a tuple? depends on whether or not we have covered tuples yet haha
