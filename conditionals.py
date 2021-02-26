@@ -15,6 +15,7 @@
 |
 
 # changes from matlab
+
 != (same as "not")
 and (&& does NOT work)
 or (|| does NOT work)
@@ -27,7 +28,7 @@ in (like "any" in matlab)
 
 # conditionals
 
-print(True or False)
+print(True and False)
 print(not True or False)
 print(not(True or False))
 
