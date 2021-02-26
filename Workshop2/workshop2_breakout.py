@@ -4,13 +4,15 @@
 # email edt3@rice.edu, cdh5@rice.edu, sn42@rice.edu
 # date 24 Feb 2021
 
+# TODO: make a document with sample solutions
+
 # Breakout room activities for workshop 2!
 # For/while loops, if statements, lists, sets, tuples, dictionaries
 
 # Lists
 
 # It's time to make your schedule on python! make a list with all the classes you are currently taking
-class_list = [] # enter your classes here!
+class_list = []  # enter your classes here!
 
 # Now you have to plan for next semester! Add one class you will be taking next semester (using a list method from the
 # CodeSkulptor Docs)
@@ -31,7 +33,7 @@ numlist = list(range(50))
 
 # We have a set with the numbers 0 and 5, but now we want to add numbers from a list into this set!
 # Write code to add the elements of the list into our given set
-st = {0, 5} # can also do set([0, 5])
+st = {0, 5}  # can also do set([0, 5])
 lst = [1, 2, 3, 4, 2, 2]
 
 
@@ -45,8 +47,8 @@ st2 = {3, 5, 6, 7, 8}
 # We made a dictionary with common fruits and what color they are!
 fruit_colors = {'apple': 'red', 'banana': 'yellow', 'raspberry': 'red', 'orange': 'orange', 'blueberry': 'blue'}
 
-# From the following dictionary, print out all the fruits that are the color red (
-for fruits in fruit_colors.keys():
+# From the following dictionary, print out all the fruits that are the color red
+for fruits in fruit_colors:
     if fruit_colors[fruits] == 'red':
         print(fruits)
 
@@ -58,18 +60,34 @@ for fruits, colors in fruit_colors.items():
 # Turns out the apple was supposed to be a Granny Smith. Can you change the 'apple' entry appropriately?
 
 
+# other idea: make a function that adds numbers to a dictionary. key is number, value is number^2
+# given the following list,
+nums = [1, 2, 3, 4]
+def square(nums):
+    newdict = {}
+    for num in nums:
+        newdict[num] = num ** 2
+    return newdict
+
+
+print(square(nums))
+
+
 # zip/enumerate -> dictionary
 # We went through the BIOE core course requirements and were able to get this data off of the website
 # However, we were only able to compile all the department names and course numbers, in order. Can you
 # convert this to a dictionary that links the course number (key) to the department (value)?
 
-# Use the zip command, then iterate through the resulting list to form your dictionary!
+# Use the zip command to make a combined list, then iterate through that list to form your dictionary!
 course_nums = [252, 140, 202, 243, 211, 451]
 depts = ['BIOE', 'COMP', 'MECH', 'ELEC', 'CHEM', 'BIOE']
 
 
+# other cool things to check out:
+# enumerate()
+
 # ideas: swap keys and values
 # nested dictionaries or lists
 
-# other idea: make a function that adds numbers to a dictionary. key is number, value is number^2
+
 dictiii = {1: 1, 2: 4, 3: 9, 4: 16}
