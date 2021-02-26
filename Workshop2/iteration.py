@@ -13,6 +13,11 @@ numbers = [1, 7, 8, 42, 3, 4, 10, 12, 13, 15]
 for num in numbers: # note the colon at the end of this line, and indentation of the following code
     print(num)
 
+count = 0
+for num in numbers: # note the colon at the end of this line, and indentation of the following code
+    print("Iteration count = ", count, "Item = ", num)
+    count += 1
+
 # hi = "hello"
 # for letter in hi:
 #     print(letter)
@@ -24,12 +29,10 @@ print("===")
 for idx in range(len(numbers)):
     print(numbers[idx])
 
-print("===")
-
 print(list(range(5)))
 # range lets you choose start (inclusive), end (exclusive), and step size
-print(list(range(5,12)))
-print(list(range(5,12,2)))
+print(list(range(5, 12)))
+print(list(range(5, 12, 2)))
 
 # similar to matlab's vec = [5:2:11];
 
@@ -48,29 +51,6 @@ print("===")
 
 # editing a list - removing odd numbers
 
-# feel like this is not necessary
-def count_odd(numbers):
-    count = 0
-    for num in numbers:
-        if num % 2 == 1:
-            count += 1
-
-    return count
-
-# this might be useful actually for function stuff
-def check_odd(numbers):
-    odd = False
-    for num in numbers:
-        if num % 2 == 1:
-            odd = True
-    return odd
-
-# change check_odd, don't rewrite all of this
-def check_odd2(numbers):
-    for num in numbers:
-        if num % 2 == 1:
-            return True
-    return False
 
 # edit list as you iterate over it, change elements that you have already checked!
 def remove_odd(numbers):
@@ -78,27 +58,9 @@ def remove_odd(numbers):
         if num % 2 == 1:
             numbers.remove(num)
 
-def remove_odd2(numbers):
-    remove = []
-    for num in numbers:
-        if num % 2 == 1:
-            remove.append(numbers.index(num))
-
-    # walk through debugging!
-    for idx in remove:
-        numbers.pop(idx)
-    # what's happening? we're saving indices, but as we go to remove items, the list shifts items to the
-    # left to take in the spot of the removed item, so we will be indexing a spot that doesn't exist
-
-# copy + paste this one!
-def remove_odd3(numbers):
-    remove = []
-    for num in numbers:
-        if num % 2 == 1:
-            remove.append(num)
-
-    for num in remove:
-        numbers.remove(num)
+print(numbers)
+# remove_odd(numbers)
+# print(numbers)
 
 def remove_odd4(numbers):
     newnums = []
@@ -107,14 +69,63 @@ def remove_odd4(numbers):
             newnums.append(num)
     return newnums
 
-def run():
-    numbers = [1, 7, 8, 42, 3, 4, 10, 12, 13, 15]
-    print(numbers)
-    remove_odd3(numbers)
-    print(numbers)
-    # print(remove_odd4(numbers))
+print(remove_odd4(numbers))
 
-run()
+# feel like this is not necessary
+# def count_odd(numbers):
+#     count = 0
+#     for num in numbers:
+#         if num % 2 == 1:
+#             count += 1
+#
+#     return count
+#
+# # this might be useful actually for function stuff
+# def check_odd(numbers):
+#     odd = False
+#     for num in numbers:
+#         if num % 2 == 1:
+#             odd = True
+#     return odd
+#
+# # change check_odd, don't rewrite all of this
+# def check_odd2(numbers):
+#     for num in numbers:
+#         if num % 2 == 1:
+#             return True
+#     return False
+#
+# def remove_odd2(numbers):
+#     remove = []
+#     for num in numbers:
+#         if num % 2 == 1:
+#             remove.append(numbers.index(num))
+#
+#     # walk through debugging!
+#     for idx in remove:
+#         numbers.pop(idx)
+#     # what's happening? we're saving indices, but as we go to remove items, the list shifts items to the
+#     # left to take in the spot of the removed item, so we will be indexing a spot that doesn't exist
+#
+# # copy + paste this one!
+# def remove_odd3(numbers):
+#     remove = []
+#     for num in numbers:
+#         if num % 2 == 1:
+#             remove.append(num)
+#
+#     for num in remove:
+#         numbers.remove(num)
+
+
+# def run():
+#     numbers = [1, 7, 8, 42, 3, 4, 10, 12, 13, 15]
+#     print(numbers)
+#     remove_odd3(numbers)
+#     print(numbers)
+#     print(remove_odd4(numbers))
+
+# run()
 
 
 # more for a conditionals/logic file
