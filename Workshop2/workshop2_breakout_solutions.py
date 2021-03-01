@@ -10,19 +10,26 @@
 # Lists
 
 # It's time to make your schedule on python! make a list with all the classes you are currently taking
-class_list = []  # enter your classes here!
+class_list = [252, 202, 211]  # enter your classes here!
 
 # Now you have to plan for next semester! Add one class you will be taking next semester (using a list method from the
 # CodeSkulptor Docs)
-
+class_list.append(243)
+print(class_list)
 
 # Congrats, you're now able to drop the hardest class you have (if it's not a BIOE class, of course). Remove a class
 # from your list (hint: try pop or remove, and understand how they're different!)
-
+class_list.remove(252)
+print(class_list)
+class_list.pop(1)
+print(class_list)
 
 # Here's a list of all the numbers from 0 to 50, exclusive (aka doesn't include 50)
 # Now, write a function that prints out all of the odd numbers! (hint, use the '%' operator)
 numlist = list(range(50))
+for num in numlist:
+    if num % 2 == 1:
+        print(num)
 
 print("===========")
 
@@ -33,10 +40,13 @@ print("===========")
 st = {0, 5}
 lst = [1, 2, 3, 4, 2, 2]
 
+combined_set = st.union(set(lst))
+print(combined_set)
 
-# Now that we have our set, we want to see if it matches our set of reference data
 # Write code to show the values these two sets have in common! (hint: check the CodeSkulptor Docs for helpful methods)
 st2 = {3, 5, 6, 7, 8}
+common_set = st2.intersection(combined_set)
+print(common_set)
 
 print("==========")
 
@@ -47,8 +57,13 @@ fruit_colors = {'apple': 'red', 'banana': 'yellow', 'raspberry': 'red', 'orange'
 
 # From the above dictionary, write code to print out all the fruits that are the color red
 
-# Turns out the apple was supposed to be a Granny Smith. Can you change the 'apple' entry appropriately?
+for fruit, color in fruit_colors.items():
+    if color == 'red':
+        print(fruit)
 
+# Turns out the apple was supposed to be a Granny Smith. Can you change the 'apple' entry appropriately?
+fruit_colors['apple'] = 'green'
+print(fruit_colors)
 
 # We went through the BIOE core course requirements and were able to get this data off of the website
 # However, we were only able to compile all the department names and course numbers, in order. Can you
@@ -57,6 +72,18 @@ fruit_colors = {'apple': 'red', 'banana': 'yellow', 'raspberry': 'red', 'orange'
 course_nums = [252, 140, 202, 243, 211, 451]
 depts = ['BIOE', 'COMP', 'MECH', 'ELEC', 'CHEM', 'BIOE']
 
+course_dict = {}
+for i in range(len(course_nums)):
+    course_dict[course_nums[i]] = depts[i]
 
-# Other cool things to check out: the enumerate and zip methods! Check out their functions in the
+print(course_dict)
+
+# You can also do this with the zip method shown below! Check out zip and enumerate in the
 # Codeskulptor documentation.
+
+zip_list = zip(course_nums, depts)
+dict2 = {}
+for course_num, dept in zip_list:
+    dict2[course_num] = dept
+
+print(dict2)
