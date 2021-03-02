@@ -7,7 +7,7 @@
 # dictionary is a mapping,
 # keys -> values. one directional
 # duplicate keys are NOT allowed!
-import random
+# import random  # uncomment if you use the advanced cypher example
 
 my_dict = {1:2, 3:4, 6:727, 83:421}
 print(my_dict[3])
@@ -15,12 +15,19 @@ print(my_dict[83])
 # print(my_dict[421])
 
 # duplicates aren't allowed!
-my_dict = {1:2, 3:4, 6:727, 83:421, 3:70, 6:49}
+my_dict = {1: 2, 3: 4, 6: 727, 83: 421, 3: 70, 6: 49}
 print(my_dict)
 
 # dictionaries can map different data types, including lists! (like cabinets)
 dict2 = {3: 'red', 5: 'blue', 6: 'red'}
 print(dict2[5])
+
+# adding to dictionaries (not covered in live session so will explain in text)
+# to add an element to a dictionary, it looks just like reassigning a value, but just for a key that doesn't exist yet
+dict2[7] = 'yellow'
+print(dict2)
+# now dict2 has a key of 7 that is mapped to the value 'yellow'!
+# you can build a dictionary like this by iterating over objects and assigning values as you go!
 
 # cypher example!
 
