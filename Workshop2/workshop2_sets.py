@@ -1,8 +1,8 @@
-# module 2 - Lists
+# Python Workshop 2 - sets
 
-#author Eric Torres
-#email edt3@rice.edu
-#date 14 Feb 2021
+# author Eric Torres
+# email edt3@rice.edu
+# date 14 Feb 2021
 
 # list - ordered sequence
 # dictionary - key -> value mapping
@@ -14,6 +14,7 @@
 
 ### Sets
 
+# courses = {252, 332, 370, 391}
 courses = set([252, 332, 370, 391])
 print(courses)
 
@@ -22,9 +23,12 @@ print(courses2)
 
 print(courses == courses2)
 
+print("===")
+
 for course in courses:
     print(course)
 
+print("===")
 
 courses.add(253)
 print(courses)
@@ -38,18 +42,20 @@ print(courses)
 
 # check if something is in a set
 print(369 in courses)
-print(332 in courses)
+print(332 not in courses)
 print(252 in courses)
+
+print("===")
 
 # you can perform logical operations on sets to combine or remove items!
 print(courses)
 print(courses2)
 
-courses3 = courses.union(courses2) # adds all items together into a set
+courses3 = courses.union(courses2)  # adds all items together into a set
 print(courses3)
-print(courses) # note that courses was not mutated!
+print(courses)  # note that courses was not mutated!
 
-courses3 = courses.intersection(courses2) # shows only items they have in common
+courses3 = courses.intersection(courses2)  # shows only items they have in common
 print(courses3)
 
 # courses3 = courses # what happens if i uncomment this line?

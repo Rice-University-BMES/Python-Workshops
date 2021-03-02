@@ -1,4 +1,10 @@
-# tuples are like lists but they are not mutable!
+# Python Workshop 2 - tuples
+
+# author Eric Torres
+# email edt3@rice.edu
+# date 03 Feb 2021
+
+# tuples are like lists but they are not mutable (aka changeable)!
 
 lst = [1, 2, 3]
 tup = (1, 2, 3)
@@ -39,7 +45,7 @@ print(new_tuple)
 # what if you want to make a copy of a tuple?
 
 new_tuple = tuple(old_tuple)
-print(old_tuple,new_tuple)
+print(old_tuple, new_tuple)
 print(old_tuple is not new_tuple) # note that this is the same object!
 
 new_tuple = list(tuple(old_tuple))

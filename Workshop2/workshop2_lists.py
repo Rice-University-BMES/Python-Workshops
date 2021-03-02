@@ -1,13 +1,10 @@
-# module 2 - Lists
+# Python Workshop 2 - Lists
 
 #author Eric Torres
 #email edt3@rice.edu
 #date 03 Feb 2021
 
 # Create
-
-mt_list = []
-print(mt_list)
 
 # order matters in a list! order is preserved
 # duplicate entries may exist in a list
@@ -23,16 +20,15 @@ print(nested)
 
 print("===")
 
-# Access
-
 print(len(groceries))
 print(len(nested))
 
 print("===")
 
-print (groceries[0])
-print (groceries[-1])
-print(nested[2])
+# Access
+print(groceries[0])
+print(groceries[-1])
+# print(nested[2])
 
 essentials = groceries[2:4]
 print(essentials)
@@ -64,6 +60,3 @@ classes.append('elec 327')
 print(classes)
 
 # in breakout rooms, can figure out what .reverse(), .insert() do
-
-
-# 
