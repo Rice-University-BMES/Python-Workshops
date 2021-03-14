@@ -11,7 +11,7 @@
 # create an array from 0 to 50 with a step size of 6
 # using numpy.arrange()
 
-# using list comprehension, store all of the odd numbers in a new list
+# using list comprehension, store all of the numbers divisible by 4 in a new list
 
 
 
