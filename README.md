@@ -1,6 +1,8 @@
 # Python Crash Course
 Welcome to Rice University BMES's introdctory Python workshops! No former coding experience is necessary, and these workshops are meant to be a low time-commitment way to have fun and learn something new!
 
+If you are just getting started, check out our guide for installing Python and PyCharm, which we use in these tutorials! <a href="https://github.com/Rice-University-BMES/Python-Workshops/blob/master/PyCharmGettingStarted.pdf">(link)</a>
+
 Workshops cover various Python basics. They are currently structured as follows:
 
 <ol>
